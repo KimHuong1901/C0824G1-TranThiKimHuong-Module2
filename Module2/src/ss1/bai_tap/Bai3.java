@@ -2,7 +2,7 @@ package ss1.bai_tap;
 
 import java.util.Scanner;
 
-public class bai_3 {
+public class Bai3 {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         System.out.println("Enter the number: ");
