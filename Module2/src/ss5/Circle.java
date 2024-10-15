@@ -1,10 +1,10 @@
 package ss5;
 
-public class Circle {
-    private double radius;
-    private String color;
-    public Circle(){}
-    public Circle(double radius) {
+public class TestCircle {
+    private double radius = 1.0;
+    private String color = "red";
+    public TestCircle(){}
+    public TestCircle(double radius) {
         this.radius = radius;
     }
     public double getRadius() {

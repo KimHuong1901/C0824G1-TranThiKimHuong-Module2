@@ -40,15 +40,16 @@ public Fan(){}
     public String toString() {
        String status;
         if (on == true) {
-            status = "Fan is on";
+            status =  "speed = " + speed +
+                    ", on = " + on +
+                    ", radius = " + radius +
+                    ", color = " + color + " " +"Fan is on";
         } else {
-            status = "Fan is off";
+            status = "radius = " + radius +
+                    ", color = " + color + " " + "Fan is off";
         }
              return
-                "speed = " + speed +
-                ", on = " + on +
-                ", radius = " + radius +
-                ", color = " + color + " " + status;
+                status;
     }
     public static void main(String[] args) {
         Fan fan1 = new Fan();
