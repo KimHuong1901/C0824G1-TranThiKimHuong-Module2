@@ -1,5 +1,10 @@
 package Bai_tap;
 
+public class ex {
+
+}
+
+
 //public class ex {
 //    static public int X = 2;
 //
@@ -41,4 +46,11 @@ package Bai_tap;
 //        System.out.printf("x=%d, y=%d", x, y);
 //
 //    }
+//}
+//public class Parent {
+//    public void method() {}
+//}
+//
+//public class Child extends Parent {
+//    protected void method;
 //}
