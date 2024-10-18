@@ -53,7 +53,7 @@ public class Rectangle extends Shape implements IResizeable {
     }
 
     @Override
-    public void resize(double percent) {
-        System.out.println("Percent is: " + percent + "%");
+    public double resize(double percent) {
+        return getArea()*percent/100;
     }
 }

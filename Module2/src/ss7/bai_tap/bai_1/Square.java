@@ -1,7 +1,7 @@
 package ss7.bai_tap.bai_1;
 
 public class Square extends Shape implements IResizeable {
-    double side;
+   private double side;
     public Square() {
     }
 
@@ -28,7 +28,7 @@ public class Square extends Shape implements IResizeable {
                 + super.toString();
     }
     @Override
-    public void resize(double percent) {
-        System.out.println("Percent is: " + percent + "%");
+    public double resize(double percent) {
+        return side*percent/100;
     }
 }

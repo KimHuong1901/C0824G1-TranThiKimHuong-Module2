@@ -31,9 +31,8 @@ public class Circle extends Shape implements IResizeable {
                     + super.toString();
         }
         @Override
-        public void resize(double percent) {
-            System.out.println("percent"
-                    + percent + "%");
+        public double resize(double percent) {
+            return radius*percent/100;
         }
     }
 
