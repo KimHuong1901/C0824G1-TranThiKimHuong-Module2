@@ -1,33 +1,31 @@
 package ss8.bai_tap;
 
-public class TennisGame {
-
+public class Ex {
     public static String getScore( int scoreFirstPlayer, int scoreSencondPlayer) {
         String score = "";
         int tempScore;
         if (scoreFirstPlayer==scoreSencondPlayer)
         {
-            switch (scoreFirstPlayer)
-            {
-                case 0:
-                    score = "Love-All";
-                    break;
-                case 1:
-                    score = "Fifteen-All";
-                    break;
-                case 2:
-                    score = "Thirty-All";
-                    break;
-                case 3:
-                    score = "Forty-All";
-                    break;
-                default:
-                    score = "Deuce";
-                    break;
-
-            }
+//            switch (scoreFirstPlayer)
+//            {
+//                case 0:
+//                    score = "Love-All";
+//                    break;
+//                case 1:
+//                    score = "Fifteen-All";
+//                    break;
+//                case 2:
+//                    score = "Thirty-All";
+//                    break;
+//                case 3:
+//                    score = "Forty-All";
+//                    break;
+//                default:
+//                    score = "Deuce";
+//                    break;
+//
+//            }
         }
-
         else if (scoreFirstPlayer>=4 || scoreSencondPlayer>=4)
         {
             int minusResult = scoreFirstPlayer-scoreSencondPlayer;
@@ -53,21 +51,7 @@ public class TennisGame {
                 } else {
                     score+="-"; tempScore = scoreSencondPlayer;
                 }
-                switch(tempScore)
-                {
-                    case 0:
-                        score+="Love";
-                        break;
-                    case 1:
-                        score+="Fifteen";
-                        break;
-                    case 2:
-                        score+="Thirty";
-                        break;
-                    case 3:
-                        score+="Forty";
-                        break;
-                }
+
             }
         }
         return score;
