@@ -7,7 +7,11 @@ public class TennisGame {
         int tempScore;
         if (scoreFirstPlayer==scoreSencondPlayer)
         {
-            score = Score.setScore(scoreFirstPlayer) + "-All" ;
+            if (Score.setScore(scoreFirstPlayer) == "Deuce") {
+                score = Score.setScore(scoreFirstPlayer);
+            } else {
+                score = Score.setScore(scoreFirstPlayer) + "-All" ;
+            }
         }
         else if (scoreFirstPlayer>=4 || scoreSencondPlayer>=4)
         {
