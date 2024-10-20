@@ -6,16 +6,19 @@ public class Score {
         switch(score)
         {
             case 0:
-                result+="Love";
+                result +="Love";
                 break;
             case 1:
-                result+="Fifteen";
+                result +="Fifteen";
                 break;
             case 2:
-                result+="Thirty";
+                result +="Thirty";
                 break;
             case 3:
-                result+="Forty";
+                result +="Forty";
+                break;
+            default:
+                result += "Deuce";
                 break;
         }
         return result;

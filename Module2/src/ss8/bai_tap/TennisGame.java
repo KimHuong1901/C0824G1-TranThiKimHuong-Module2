@@ -7,27 +7,8 @@ public class TennisGame {
         int tempScore;
         if (scoreFirstPlayer==scoreSencondPlayer)
         {
-            switch (scoreFirstPlayer)
-            {
-                case 0:
-                    score = "Love-All";
-                    break;
-                case 1:
-                    score = "Fifteen-All";
-                    break;
-                case 2:
-                    score = "Thirty-All";
-                    break;
-                case 3:
-                    score = "Forty-All";
-                    break;
-                default:
-                    score = "Deuce";
-                    break;
-
-            }
+            score = Score.setScore(scoreFirstPlayer) + "-All" ;
         }
-
         else if (scoreFirstPlayer>=4 || scoreSencondPlayer>=4)
         {
             int minusResult = scoreFirstPlayer-scoreSencondPlayer;
@@ -53,21 +34,7 @@ public class TennisGame {
                 } else {
                     score+="-"; tempScore = scoreSencondPlayer;
                 }
-                switch(tempScore)
-                {
-                    case 0:
-                        score+="Love";
-                        break;
-                    case 1:
-                        score+="Fifteen";
-                        break;
-                    case 2:
-                        score+="Thirty";
-                        break;
-                    case 3:
-                        score+="Forty";
-                        break;
-                }
+                score = Score.setScore(tempScore);
             }
         }
         return score;
