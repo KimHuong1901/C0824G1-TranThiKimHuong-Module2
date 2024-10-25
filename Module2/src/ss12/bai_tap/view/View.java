@@ -85,6 +85,7 @@ public class View {
                     }
                 break;
             case 5:
+                sc.nextLine();
                 System.out.println("Nhập tên sản phẩm bạn muốn tìm kiếm: ");
                 String name = sc.nextLine();
                 ProductController findProduct = new ProductController();
