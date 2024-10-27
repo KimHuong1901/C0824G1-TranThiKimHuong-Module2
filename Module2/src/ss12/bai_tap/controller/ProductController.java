@@ -1,15 +1,15 @@
 package ss12.bai_tap.controller;
 
 import ss12.bai_tap.entity.Product;
-import ss12.bai_tap.service.ProductManagerService;
+import ss12.bai_tap.service.ProductService;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ProductController {
-        public ArrayList<Product> products = new ArrayList<Product>();
-        ProductManagerService productManager = new ProductManagerService();
-        public ArrayList<Product> getProducts() {
-            return productManager.getNewProduct();
+       private ProductService productManager = new ProductService();
+        public List<Product> getProducts() {
+            return productManager.getValue();
         }
        public boolean addProduct(Product product) {
              return productManager.addProduct(product);
@@ -20,7 +20,13 @@ public class ProductController {
        public boolean removeProduct(int id) {
             return productManager.removeProduct(id);
        }
-       public ArrayList<Product> findAllProducts(String name) {
+       public List<Product> findAllProducts(String name) {
             return productManager.findAllProduct(name);
        }
+       public List<Product> sortProductsIncre() {
+            return productManager.sortProductIncre();
+       }
+       public List<Product> sortProductsDescre() {
+        return productManager.sortProductDescre();
+    }
 }
