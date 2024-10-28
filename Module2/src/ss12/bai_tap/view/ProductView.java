@@ -64,6 +64,8 @@ public class ProductView {
                     int id = Integer.parseInt(sc.nextLine());
                     if(productController.removeProduct(id)){
                         System.out.println("Xóa sản phẩm thành công");
+                    } else {
+                        System.out.println("Xóa sản phẩm thất bại. Không tồn tại sản phẩm với id này.");
                     }
                     displayProduct(displayProduct);
                 }catch (InputMismatchException e){
