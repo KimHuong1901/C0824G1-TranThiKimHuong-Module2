@@ -1,25 +1,29 @@
 package ss14.bai_tap;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the length of the array: ");
-        int length = sc.nextInt();
-        int [] intArray = new int [length];
-        for (int i = 0; i < length; i++) {
-            System.out.println("Enter the value: ");
-            intArray[i] = sc.nextInt();
-            System.out.println("Array before insertion: ");
-            System.out.println(intArray[i]);
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the length of the array: ");
+            int length = sc.nextInt();
+            int [] intArray = new int [length];
+            for (int i = 0; i < length; i++) {
+                System.out.println("Enter the value: ");
+                intArray[i] = sc.nextInt();
+                System.out.println("Array before insertion: ");
+                System.out.println(intArray[i]);
+            }
+            System.out.println("Arrray after insertion: ");
+            insertionSort(intArray);
+            for (int i = 0; i < length; i++) {
+                System.out.println(intArray[i]);
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid value");
         }
-        System.out.println("Arrray after insertion: ");
-        insertionSort(intArray);
-        for (int i = 0; i < length; i++) {
-            System.out.println(intArray[i]);
-        }
-
     }
     public static void insertionSort(int [] arr) {
         int index;
