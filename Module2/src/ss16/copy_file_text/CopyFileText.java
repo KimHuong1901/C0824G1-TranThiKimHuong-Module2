@@ -38,7 +38,6 @@ public class CopyFileText {
             while ((byteRead = inputStream.read()) != -1) {
                 outputStream.write(byteRead);
                 totalBytes++;
-                characterCount++;
             }
 
             System.out.println("Coppy successfully " + totalBytes + " byte from: " + sourceFile + " to: " + targetFile);
