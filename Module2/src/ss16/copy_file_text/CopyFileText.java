@@ -41,7 +41,7 @@ public class CopyFileText {
             }
 
             System.out.println("Coppy successfully " + totalBytes + " byte from: " + sourceFile + " to: " + targetFile);
-            System.out.println("Number charactor in Source file:  " + characterCount);
+            System.out.println("Number charactor in Source file:  " + totalBytes);
 
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
