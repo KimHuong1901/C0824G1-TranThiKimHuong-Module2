@@ -23,7 +23,7 @@ public class ProductServices implements IProductServices {
    public boolean addProduct(Product product, String file) {
          ProductServices productService = new ProductServices();
         if (productService.findProductById(file, product.getId()) == null){
-            productRepository.saveToFile(product);
+            productRepository.saveToFile(product,file);
             return true;
         }
        return false;

@@ -13,7 +13,8 @@ public class ProductRepository {
 //        products.add(new Product(02, "TV", 15000000, "Samsung", "Smart"));
 //    }
     File filePath = new File("src/ss17/bai_tap/Product.csv");
-    public void saveToFile(Product product) {
+    public void saveToFile(Product product, String file ) {
+            getProduct(file);
         products.add(product);
         try (FileOutputStream fos = new FileOutputStream(filePath);
              ObjectOutputStream oos = new ObjectOutputStream(fos)) {
