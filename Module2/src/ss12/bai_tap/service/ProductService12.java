@@ -2,12 +2,14 @@ package ss12.bai_tap.service;
 
 import ss12.bai_tap.entity.Product;
 import ss12.bai_tap.repository.ProductRepository;
+import ss17.bai_tap.view.ProductView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductService implements IProductServices{
+public class ProductService12 implements IProductServices{
     private ProductRepository productManager = new ProductRepository();
+    private ProductView productView = new ProductView();
     private List<Product> newProduct = new ArrayList<>();
 
     @Override

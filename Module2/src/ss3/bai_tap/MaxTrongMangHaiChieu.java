@@ -26,6 +26,8 @@ public class MaxTrongMangHaiChieu {
                         for(int j = 0; j < indexColumn; j++){
                             if (max < numArr[i][j]){
                                 max = numArr[i][j];
+                            } else {
+                                //
                             }
                         }
                     }

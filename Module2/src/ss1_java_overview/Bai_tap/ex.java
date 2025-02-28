@@ -1,7 +1,38 @@
-package Bai_tap;
+package ss1_java_overview.bai_tap;
 
 public class ex {
+public void loop(){
+    int x = 0;
+//    while(1){}
+}
 
+    volatile int sleepTime;
+    public static void main(String[] args) {
+        int sum = 0;
+        for(int i = 5; i<9;){
+            sum +=i;
+            i++;
+        }
+        System.out.println(sum);
+//        int x = 100;
+//        double y = 100.1;
+//        boolean b = (x = y);
+//        System.out.println(b);
+//        ex  e = new HuMan();
+//        HuMan e2 = e;
+//        System.out.println(e + "," + e2);
+//   }
+//public String toString(){
+//        return "ABC";
+//}
+//class HuMan extends ex{
+//        public String toString(){
+//            return "HuMan";
+//        }
+//}
+//final class outer{}
+//    public class default{}
+}
 }
 
 

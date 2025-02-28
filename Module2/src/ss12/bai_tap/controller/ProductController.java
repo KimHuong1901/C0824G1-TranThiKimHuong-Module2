@@ -1,13 +1,12 @@
 package ss12.bai_tap.controller;
 
 import ss12.bai_tap.entity.Product;
-import ss12.bai_tap.service.ProductService;
+import ss12.bai_tap.service.ProductService12;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ProductController {
-       private ProductService productManager = new ProductService();
+       private ProductService12 productManager = new ProductService12();
         public List<Product> getProducts() {
             return productManager.getValue();
         }
